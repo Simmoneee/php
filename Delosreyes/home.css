@@ -1,0 +1,224 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Top Box */
+.top-box {
+    width: 100%;
+    background-color: #a3e4d7;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.search-bar {
+    width: 30%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.search-bar:focus {
+    outline: none;
+    border: 2px solid #81d2c3;
+}
+
+/* Left Box */
+.left-box {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 220px;
+    height: calc(100vh - 60px);
+    background-color: #a3e4d7;
+    padding: 20px;
+    box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+.left-box h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.left-box h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.alert-container button {
+    margin: 10px 0;
+    padding: 14px 20px; 
+    background-color: #81d2c3;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.alert-container button:hover {
+    background-color: #66b8a1;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #34495e;
+    position: relative;
+    padding-right: 40px; 
+}
+
+.edit-btn {
+    background-color: #f1c40f;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    position: absolute; 
+    right: 90px; 
+}
+
+.edit-btn:hover {
+    background-color: #000000;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 12px; 
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    position: absolute; 
+    right: 10px; 
+}
+
+.delete-btn:hover {
+    background-color: #e53935;
+}
+
+/* Button Styles */
+.add-btn {
+    background-color: #1abc9c;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px; 
+}
+
+.add-btn:hover {
+    background-color: #16a085;
+}
+
+/* Manage Cities Box Styles */
+.manage-cities-box {
+    margin: auto; /* Center the box */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    max-width: 900px;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Structure internal content */
+    justify-content: center; /* Vertically align content inside */
+    align-items: center; /* Horizontally align content inside */
+}
+
+.manage-cities-box h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.manage-cities-box h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+.manage-cities-box form {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.manage-cities-box input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.manage-cities-box button {
+    width: 100%;
+    padding: 14px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.manage-cities-box button:hover {
+    background-color: #16a085;
+}
